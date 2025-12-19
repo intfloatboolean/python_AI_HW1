@@ -93,7 +93,7 @@ if mode == "📊 Анализ исторических данных (загру�
             with col_stats:
                 st.subheader("Описательная статистика")
                 stats = city_df['temperature'].describe().round(2).to_frame(name='value')
-                st.dataframe(stats, width=360, height=200)
+                #st.dataframe(stats, width=360, height=200)
             with col_season:
                 st.subheader("Сезонные характеристики")
                 season_stats = city_df.groupby('season')['temperature'].agg(['mean', 'std']).round(2)
