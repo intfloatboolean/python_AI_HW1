@@ -121,7 +121,7 @@ if mode == "📊 Анализ исторических данных (загру�
             time_par = time.time() - start_par
             
             # Результаты замера времени
-            col_time1, col_time2, col speedup = st.columns(3)
+            col_time1, col_time2, col_speedup = st.columns(3)
             with col_time1:
                 st.metric("Последовательный", f"{time_seq:.3f}с")
             with col_time2:
